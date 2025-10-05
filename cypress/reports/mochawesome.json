@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-29T17:49:39.032Z",
+    "end": "2025-09-29T17:50:04.747Z",
+    "duration": 25715,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "432868de-3e20-4e2b-bc64-37552c3f30b0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\CreationDeCompte.cy.js",
+      "file": "cypress\\e2e\\CreationDeCompte.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "95feedd0-c003-4028-8ad7-ed20b44c469d",
+          "title": "Création de compte CampusFrance - Étudiants et Chercheurs",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Remplit le formulaire pour Étudiants : Paul Durand",
+              "fullTitle": "Création de compte CampusFrance - Étudiants et Chercheurs Remplit le formulaire pour Étudiants : Paul Durand",
+              "timedOut": null,
+              "duration": 7447,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[placeholder=\"monadresse@domaine.com\"]').should('be.visible').type(utilisateur.AdresseEmail);\ncy.get('#edit-pass-pass1').type(utilisateur.MotDePasse);\ncy.get('#edit-pass-pass2').type(utilisateur.ConfirmerMotDePasse);\nif (utilisateur.Civilite === 'Mr') {\n  cy.get('label[for=\"edit-field-civilite-mr\"]').click();\n} else if (utilisateur.Civilite === 'Mme') {\n  cy.get('label[for=\"edit-field-civilite-mme\"]').click();\n}\ncy.get('#edit-field-nom-0-value').type(utilisateur.Nom);\ncy.get('#edit-field-prenom-0-value').type(utilisateur.Prenom);\ncy.get('#edit-field-pays-concernes-selectized').click().type('{ctrl}a{backspace}').type(`${utilisateur.PaysDeResidence}{enter}`);\ncy.get('#edit-field-nationalite-0-target-id').type(utilisateur.PaysDeNationalite);\ncy.get('#edit-field-code-postal-0-value').type(utilisateur.CodePostal);\ncy.get('#edit-field-ville-0-value').type(utilisateur.Ville);\ncy.get('#edit-field-telephone-0-value').type(utilisateur.Telephone);\nif (utilisateur.VousEtes === 'Étudiants') {\n  cy.get('#edit-field-publics-cibles-2').click({\n    force: true\n  });\n} else if (utilisateur.VousEtes === 'Chercheurs') {\n  cy.get('#edit-field-publics-cibles-3').click({\n    force: true\n  });\n}\ncy.get('#edit-field-domaine-etudes-selectized').click().type('{ctrl}a{backspace}').type(`${utilisateur.DomaineEtudes}{enter}`);\ncy.get('#edit-field-niveaux-etude-selectized').click().type('{ctrl}a{backspace}').type(`${utilisateur.NiveauEtude}{enter}`);\ncy.contains(\"J’accepte que mes données soient traitées pour recevoir des communications adaptées, de la part de Campus France.\").should('be.visible');",
+              "err": {},
+              "uuid": "a3e37c87-9e01-496b-8649-00460ea7f3a6",
+              "parentUUID": "95feedd0-c003-4028-8ad7-ed20b44c469d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remplit le formulaire pour Chercheurs : Julie Nguyen",
+              "fullTitle": "Création de compte CampusFrance - Étudiants et Chercheurs Remplit le formulaire pour Chercheurs : Julie Nguyen",
+              "timedOut": null,
+              "duration": 6498,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[placeholder=\"monadresse@domaine.com\"]').should('be.visible').type(utilisateur.AdresseEmail);\ncy.get('#edit-pass-pass1').type(utilisateur.MotDePasse);\ncy.get('#edit-pass-pass2').type(utilisateur.ConfirmerMotDePasse);\nif (utilisateur.Civilite === 'Mr') {\n  cy.get('label[for=\"edit-field-civilite-mr\"]').click();\n} else if (utilisateur.Civilite === 'Mme') {\n  cy.get('label[for=\"edit-field-civilite-mme\"]').click();\n}\ncy.get('#edit-field-nom-0-value').type(utilisateur.Nom);\ncy.get('#edit-field-prenom-0-value').type(utilisateur.Prenom);\ncy.get('#edit-field-pays-concernes-selectized').click().type('{ctrl}a{backspace}').type(`${utilisateur.PaysDeResidence}{enter}`);\ncy.get('#edit-field-nationalite-0-target-id').type(utilisateur.PaysDeNationalite);\ncy.get('#edit-field-code-postal-0-value').type(utilisateur.CodePostal);\ncy.get('#edit-field-ville-0-value').type(utilisateur.Ville);\ncy.get('#edit-field-telephone-0-value').type(utilisateur.Telephone);\nif (utilisateur.VousEtes === 'Étudiants') {\n  cy.get('#edit-field-publics-cibles-2').click({\n    force: true\n  });\n} else if (utilisateur.VousEtes === 'Chercheurs') {\n  cy.get('#edit-field-publics-cibles-3').click({\n    force: true\n  });\n}\ncy.get('#edit-field-domaine-etudes-selectized').click().type('{ctrl}a{backspace}').type(`${utilisateur.DomaineEtudes}{enter}`);\ncy.get('#edit-field-niveaux-etude-selectized').click().type('{ctrl}a{backspace}').type(`${utilisateur.NiveauEtude}{enter}`);\ncy.contains(\"J’accepte que mes données soient traitées pour recevoir des communications adaptées, de la part de Campus France.\").should('be.visible');",
+              "err": {},
+              "uuid": "a389d2f5-2f6f-4760-8d0e-b1f3b4ffb73d",
+              "parentUUID": "95feedd0-c003-4028-8ad7-ed20b44c469d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a3e37c87-9e01-496b-8649-00460ea7f3a6",
+            "a389d2f5-2f6f-4760-8d0e-b1f3b4ffb73d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13945,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

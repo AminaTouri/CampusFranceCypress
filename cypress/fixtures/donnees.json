@@ -1,0 +1,34 @@
+[
+  {
+    "AdresseEmail": "etudiant1@example.com",
+    "MotDePasse": "Etudiant123!",
+    "ConfirmerMotDePasse": "Etudiant123!",
+    "Civilite": "Mr",
+    "Nom": "Durand",
+    "Prenom": "Paul",
+    "PaysDeResidence": "France",
+    "PaysDeNationalite": "France",
+    "CodePostal": "75001",
+    "Ville": "Paris",
+    "Telephone": "0612345678",
+    "VousEtes": "Étudiants",
+    "DomaineEtudes": "Chimie",
+    "NiveauEtude": "Licence 1"
+  },
+  {
+    "AdresseEmail": "chercheur2@example.com",
+    "MotDePasse": "Chercheur123!",
+    "ConfirmerMotDePasse": "Chercheur123!",
+    "Civilite": "Mme",
+    "Nom": "Nguyen",
+    "Prenom": "Julie",
+    "PaysDeResidence": "France",
+    "PaysDeNationalite": "Vietnam",
+    "CodePostal": "13000",
+    "Ville": "Marseille",
+    "Telephone": "0678912345",
+    "VousEtes": "Chercheurs",
+    "DomaineEtudes": "qsds",
+    "NiveauEtude": "Licence 1"
+  }
+]
