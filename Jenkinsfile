@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloner le projet') {
       steps {
-        git 'https://ton-repo.git' // ou chemin local
+        git 'https://github.com/AminaTouri/CampusFranceCypress.git'
       }
     }
 
