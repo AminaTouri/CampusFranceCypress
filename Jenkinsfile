@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   tools {
-    nodejs 'NodeJS' // <- Assure-toi que ce nom correspond à ce que tu as défini dans Jenkins
+    nodejs 'Node24'   // <- Assure-toi que ce nom correspond à ce que tu as défini dans Jenkins
   }
 
   stages {
